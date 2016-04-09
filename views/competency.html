@@ -1,0 +1,34 @@
+          <div id="comp" class="allcentered">
+            <h4>--- computer competency ---</h4>
+            <small class="livesearch">live search</small>
+            <input type="text" ng-model="search" ng-maxlength="maxlength" class="form-control"/>
+              <div class="searchresults">
+                <strong>{{ search }}</strong>
+              </div>
+          </div>
+
+            <table class="table table-stripped">
+              <thead>
+                <tr>
+                  <th>tech</th>
+                  <th>active</th>              
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in arrData | filter:search">
+                   <td>{{ item.tech }}</td>
+                   <td ng-bind-html="item.desc"></td> 
+                </tr>
+              </tbody>
+            </table>
+
+            <hr/>
+            <br/>
+
+            <div class="allcentered">
+              <div class="mynavigation">
+                <a href="#/aboutme">About me</a>
+              </div>
+              <h4>--- &copy;ervinselimovic 2016 ---</h4>
+              <small><a href="https://ervinselimovic.com">ervinselimovic.com</a></small>
+            </div>
