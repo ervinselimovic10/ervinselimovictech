@@ -1,0 +1,100 @@
+body {
+  font-family: 'Source Code Pro', sans-serif;
+  margin-bottom: 120px;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+/* On enter animate - angularstyles */
+.page.ng-enter {
+  transition:1.5s linear all;
+  -webkit-transition:1.5s linear all;
+     -moz-transition:1.5s linear all;
+       -o-transition:1.5s linear all;
+  opacity:0;
+}
+
+/* On leave animate - angularstyles */
+.page.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+/* Nav links */
+.mynavigation a {
+  text-decoration: none !important;
+  color: rgb(63, 66, 56) !important;
+}
+
+.mynavigation a:hover {
+  text-decoration: none !important;
+  color: rgb(136, 192, 68) !important;
+}
+
+/* Check icon color */
+.fa-check {
+  color: rgb(136, 192, 68);
+}
+
+/* Text centered - div */
+.allcentered {
+  text-align: center;
+}
+
+/* Live search - p color */
+.livesearch {
+  color: rgb(136, 192, 68);
+}
+
+/* Live search - live results */
+.searchresults {
+  padding: 12px;
+  text-decoration: underline;
+}
+
+/* Text field on focus */
+input[type="text"]:focus {
+  border: 1px solid rgb(136, 192, 68) !important;
+}
+
+/* Any ul, no list style */
+ul {
+  list-style: none;
+}
+
+/* Profile styles */
+.eprofile {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+     -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+       -o-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.myprofile {
+  width: 100%;
+  text-align: center;
+  box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+  -webkit-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+     -moz-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+       -o-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+}
+
+/* Socialmedia buttons */
+.socialmedia {
+  margin-top: 40px;
+}
+
+.socialmedia a {
+  color: #333;
+  font-size: 32px;
+  padding-right: 8px;
+  color: rgb(63, 66, 56);
+}
+
+.socialmedia a:hover {
+  color: rgb(136, 192, 68);
+}
