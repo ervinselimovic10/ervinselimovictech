@@ -12,7 +12,6 @@ body > .container {
   background-repeat: no-repeat;
   min-height: 60px;
   background-color: #333;
-  border-radius: 5px;
   /* Anim */
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -22,7 +21,6 @@ body > .container {
 
 .shrink {
   min-height: 35px;
-  border-radius: 8px;
   opacity: 0.8;
 }
 
