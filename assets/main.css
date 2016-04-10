@@ -4,7 +4,26 @@ body {
 }
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 80px 15px 0;
+}
+
+.mynav {
+  background: url('img/menubar3.jpg');
+  background-repeat: no-repeat;
+  min-height: 60px;
+  background-color: #333;
+  border-radius: 5px;
+  /* Anim */
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+}
+
+.shrink {
+  min-height: 35px;
+  border-radius: 8px;
+  opacity: 0.8;
 }
 
 /* On enter animate - angularstyles */
