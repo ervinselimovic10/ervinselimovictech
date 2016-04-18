@@ -4,7 +4,7 @@ var app = angular.module('eApp', ['ngRoute', 'ngAnimate', 'ngSanitize']);
 
 app
 // Routes
-.config(['$routeProvider', function(routeProvider) {
+.config(['$routeProvider', '$locationProvider', function(routeProvider, locationProvider) {
   routeProvider
     .when('/', {
       templateUrl: 'views/competency.html',
@@ -22,6 +22,9 @@ app
     .otherwise({
       redirectTo: '/'
     });
+
+    locationProvider.html5Mode(true);
+    locationProvider.hashPrefix('!');
 }])
 
 // Controllers
