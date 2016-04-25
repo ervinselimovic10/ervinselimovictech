@@ -25,6 +25,5 @@ app.config(['$routeProvider', '$locationProvider', function(routeProvider, locat
     });
 
     locationProvider.html5Mode(true);
-    locationProvider.hashPrefix('!');
 }]);
 
