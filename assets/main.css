@@ -1,5 +1,14 @@
 body {
-  font-family: 'Source Code Pro', sans-serif;
+  background-image: url('img/macbook.jpg');
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          z-index: -1;
+          background-attachment: fixed;
+          font-family: Raleway;
+  font-family: 'Sorts Mill Goudy', serif;
   margin-bottom: 120px;
 }
 
@@ -8,10 +17,10 @@ body > .container {
 }
 
 .mynav {
-  background: url('img/menubar3.jpg');
   background-repeat: no-repeat;
   min-height: 60px;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-top: 1px solid #E86B04;
   /* Anim */
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -19,9 +28,47 @@ body > .container {
        -o-transition: all 0.4s ease;
 }
 
+.ulnav {
+  list-style: none;
+  text-align: center;
+  margin: 20px;
+}
+
+.ulnav li {
+  display: inline;
+  padding: 25px;
+}
+
+.ulnav li a {
+  color: #f8f8f8 !important;
+}
+
+.ulnav li a:hover {
+  color: #E86B04 !important;
+  text-decoration: none !important;
+}
+
+.ulnav li a:active {
+  color: #E86B04 !important;
+  text-decoration: none !important;
+}
+
+.ulnav li a.active {
+  color: #E86B04 !important;
+  text-decoration: none !important;
+  border-radius: 2px;
+  border: 1px solid #E86B04;
+  padding: 8px;
+  /* Anim */
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+}
+
 .shrink {
   min-height: 35px;
-  opacity: 0.8;
+  opacity: 0.8; 
 }
 
 /* On enter animate - angularstyles */
@@ -41,12 +88,12 @@ body > .container {
 /* Nav links */
 .mynavigation a {
   text-decoration: none !important;
-  color: rgb(63, 66, 56) !important;
+  color: #333 !important;
 }
 
 .mynavigation a:hover {
   text-decoration: none !important;
-  color: rgb(136, 192, 68) !important;
+  color: #E86B04 !important;
 }
 
 /* Check icon color */
@@ -61,7 +108,8 @@ body > .container {
 
 /* Live search - p color */
 .livesearch {
-  color: rgb(136, 192, 68);
+  /*color: rgb(136, 192, 68);*/
+  color: #E86B04;
 }
 
 /* Live search - live results */
@@ -70,9 +118,13 @@ body > .container {
   text-decoration: underline;
 }
 
-/* Text field on focus */
+/* Text Input Field */
 input[type="text"]:focus {
-  border: 1px solid rgb(136, 192, 68) !important;
+  border: 1px solid #E86B04 !important;
+  box-shadow: 1px 2px 4px rgba(63, 66, 56, .5) !important;
+  -webkit-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5) !important;
+     -moz-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5) !important;
+       -o-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5) !important;
 }
 
 /* Any ul, no list style */
@@ -81,6 +133,18 @@ ul {
 }
 
 /* Profile styles */
+#iwebdev {
+  color: #fff;
+  font-size: 52px;
+  width: 100%;
+}
+
+#iwebdev2 {
+  color: #fff;
+  text-align: right;
+  margin-top: -18px;
+}
+
 .eprofile {
   height: 150px;
   width: 150px;
@@ -91,7 +155,20 @@ ul {
        -o-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
+.views {
+  background-color: rgba(240, 240, 240, 0.6);
+  border: 0px solid rgba(240, 240, 240, 0.6);
+  width: 100%;
+  box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+  -webkit-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+     -moz-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+       -o-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+}
+
 .myprofile {
+  margin-top: 40px;
+  background-color: rgba(240, 240, 240, 0.6);
+  border: 0px solid rgba(240, 240, 240, 0.6);
   width: 100%;
   text-align: center;
   box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
@@ -113,5 +190,146 @@ ul {
 }
 
 .socialmedia a:hover {
-  color: rgb(136, 192, 68);
+  color: #E86B04;
+}
+
+.myfooter {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Small Screen Sizes */
+
+/* TABLETs */
+@media (max-width: 768px) {
+    #iwebdev {
+      color: #fff;
+      font-size: 32px;
+    }
+
+    #iwebdev2 {
+      color: #fff;
+      text-align: right;
+      margin-top: -10px;
+      font-size: 16px;
+    }
+
+    .imgopacity {
+      opacity: 1;
+    }
+
+
+}
+
+/* PHONEs */
+@media (max-width: 425px) {
+    #iwebdev {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    #iwebdev2 {
+      text-align: center;
+    }
+
+    .imgopacity {
+      opacity: 1;
+    }
+
+    .ulnav {
+      list-style: none;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .ulnav li {
+      display: block;
+      padding: 6px;
+    }
+
+    .ulnav li a {
+      color: #f8f8f8 !important;
+    }
+
+    .ulnav li a:hover {
+      color: #E86B04 !important;
+      text-decoration: none !important;
+    }
+
+    .ulnav li a:active {
+      color: #E86B04 !important;
+      text-decoration: none !important;
+    }
+
+    .ulnav li a.active {
+      color: #E86B04 !important;
+      text-decoration: none !important;
+      border-radius: 2px;
+      border: 1px solid #E86B04;
+      padding: 6px;
+      /* Anim */
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+         -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+    }
+
+    /* Pull the main content down, because of navbar */
+    .page {
+      margin-top: 120px;
+    }
+}
+
+/* Additional Pages */
+.wrapper {
+  padding: 25px;
+  border-radius: 5px;
+  background-color: rgba(240, 240, 240, 0.7);
+  border: 0px solid rgba(240, 240, 240, 0.7);
+  width: 100%;
+  box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+  -webkit-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+     -moz-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+       -o-box-shadow: 1px 2px 4px rgba(63, 66, 56, .5);
+}
+
+/* IMG Opacity */
+.imgopacity {
+  opacity: 0.6;
+  /* Anim */
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.imgopacity:hover {
+  opacity: 1;
+  /* Anim */
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* Bolded Styles */
+.bolded {
+  font-weight: bold;
+}
+
+.th {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Contact UL */
+.contactul {
+  font-family: Georgia;
+}
+
+/* Important Text */
+.imp {
+  font-size: 16px;
 }
