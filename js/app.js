@@ -12,7 +12,7 @@ app.config(['$routeProvider', '$locationProvider', function(routeProvider, locat
       templateUrl: 'views/about.html'
     })
     .when('/competencies', {
-      templateUrl: 'views/competency.html'
+      templateUrl: 'views/competencies.html'
     })
     .when('/references', {
       templateUrl: 'views/references.html'
