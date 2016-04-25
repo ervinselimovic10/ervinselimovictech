@@ -6,13 +6,13 @@ app.config(['$routeProvider', '$locationProvider', function(routeProvider, locat
   routeProvider
     .when('/', {
       templateUrl: 'views/frontpage.html',
-      controller: 'SearchController'
     })
     .when('/about', {
       templateUrl: 'views/about.html'
     })
     .when('/competencies', {
-      templateUrl: 'views/competencies.html'
+      templateUrl: 'views/competencies.html',
+      controller: 'SearchController'
     })
     .when('/references', {
       templateUrl: 'views/references.html'
